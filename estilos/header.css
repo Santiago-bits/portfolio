@@ -1,0 +1,17 @@
+.boton-header {
+    background-color: #8e24aa; 
+    color: white;
+    padding: 0px 24px;
+    text-align: center;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.nombre {
+    font-family: 'Courier New', Courier, monospace;
+    color: #8e24aa; 
+    
+}

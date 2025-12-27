@@ -1,0 +1,26 @@
+/* ========= FOOTER ========= */
+#footer {
+  background-color: #000000;
+  border-top: 1px solid rgba(186, 104, 200, 0.3);
+  color: #e0e0e0;
+}
+
+#footer .footer-text {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+}
+
+#footer .footer-link {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#footer .footer-link:hover {
+  color: #ba68c8;
+}
+
+#footer i {
+  font-size: 1rem;
+}

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mi web</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilos/header.css">
+  <link rel="stylesheet" href="estilos/index.css">
+  <link rel="stylesheet" href="estilos/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand nombre fw-bold fs-3" href="#inicio">santiago jacobo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item boton-header">
+            <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+          </li>
+          <li class="nav-item boton-header">
+            <a class="nav-link" href="#experiencia">Experiencia</a>
+          </li>
+          <li class="nav-item boton-header">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item boton-header">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- 1. HERO / SOBRE MÍ -->
+    <section id="sobre-mi" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4">
+            <h1 class="display-4 fw-bold mb-4">
+              Hola, soy<br>
+              <span>jacobo santiago</span>
+            </h1>
+            <h2 class="mb-4">Desarrollador Web Full Stack</h2>
+            <p class="lead mb-4">
+              Creo sitios modernos y funcionales con HTML, CSS, JS, PHP y MySQL.
+            
+            </p>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img src="fotos/WhatsApp Image 2025-12-26 at 18.24.08.jpeg"
+                 class="img-fluid"
+                 style="max-width: 70%; height: 100%;"
+                 alt="Tu foto">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SOBRE MÍ DETALLE -->
+    <section id="sobre-detalle" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold mb-4">Sobre mí</h2>
+          <p class="lead text-muted">Quién soy y cómo trabajo</p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Columna texto -->
+          <div class="col-lg-6">
+            <div class="p-4 h-100 d-flex flex-column justify-content-center">
+              <h3 class="mb-3">Hola, soy Jacobo Santiago</h3>
+              <p class="mb-3">
+                Desarrollador web de entre rios concordia, enfocado en crear sitios claros, rápidos y fáciles de usar.
+                Me gusta trabajar con HTML, CSS, JavaScript, python y MySQL para construir proyectos completos.
+              </p>
+              <p class="mb-3">
+                Disfruto mucho convertir ideas en interfaces reales.
+              </p>
+              <p class="mb-0">
+                Busco seguir creciendo como desarrollador, participando en proyectos donde pueda aportar tanto en frontend
+                como en backend y aprender tecnologías nuevas todo el tiempo.
+              </p>
+            </div>
+          </div>
+
+          <!-- Columna datos rápidos -->
+          <div class="col-lg-6">
+            <div class="p-4 h-100">
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="p-3 border rounded-4">
+                    <h4 class="mb-1" style="font-size:1rem;">Ubicación</h4>
+                    <p class="mb-0 text-muted" style="font-size:0.9rem;">entre rios concordia, Argentina</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 border rounded-4">
+                    <h4 class="mb-1" style="font-size:1rem;">Rol</h4>
+                    <p class="mb-0 text-muted" style="font-size:0.9rem;">Desarrollador Web</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 border rounded-4">
+                    <h4 class="mb-1" style="font-size:1rem;">Experiencia</h4>
+                    <p class="mb-0 text-muted" style="font-size:0.9rem;">Proyectos personales y freelance</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 border rounded-4">
+                    <h4 class="mb-1" style="font-size:1rem;">Enfoque</h4>
+                    <p class="mb-0 text-muted" style="font-size:0.9rem;">Código limpio y diseño simple</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <h4 class="mb-3" style="font-size:1rem;">Lo que más me gusta trabajar</h4>
+                <ul class="list-unstyled text-muted" style="font-size:0.9rem;">
+                  <li>• Sitios web completos (frontend + backend)</li>
+                  <li>• Interfaces claras con buen diseño responsive</li>
+                  <li>• Automatizar tareas repetitivas con código</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. EXPERIENCIA -->
+    <section id="experiencia" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold mb-4">Experiencia & Estudios</h2>
+          <p class="lead">Mi recorrido profesional y académico</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <!-- EXPERIENCIA PROFESIONAL -->
+            <div class="mb-5">
+              <h3 class="mb-4">Experiencia Profesional</h3>
+
+              <div class="timeline-item mb-5">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2024 - 2025</span>
+                  <h3>Desarrollador Web Freelance - E-commerce Plaxmar</h3>
+                  <p>Desarrollo completo de tienda online con funcionalidades avanzadas.</p>
+                  <p class="timeline-tags">PHP · MySQL · Bootstrap · JavaScript · Panel Admin</p>
+                </div>
+              </div>
+
+              <div class="timeline-item mb-5">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2023 - 2024</span>
+                  <h3>Proyectos Personales Web</h3>
+                  <p>Landing pages, portfolios y aplicaciones frontend para práctica intensiva.</p>
+                  <p class="timeline-tags">HTML5 · CSS3 · JavaScript · Responsive Design</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- ESTUDIOS Y FORMACIÓN -->
+            <div class="mb-5">
+              <h3 class="mb-4">Educación y Formación</h3>
+
+              <div class="timeline-item mb-4">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2023 - Presente</span>
+                  <h3>Formación Autodidacta Desarrollo Web Full Stack y academica</h3>
+                  <p>titulo en tecnicatura superiro en programacion.</p>
+                  <p>Cursos online especializados, documentación oficial y proyectos reales.</p>
+                  <p class="timeline-tags">Frontend · Backend · PHP · MySQL · Buenas Prácticas</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Secundario Completo</span>
+                  <h3>Educación Secundaria</h3>
+                  <p>Base sólida para continuar estudios superiores y desarrollo profesional.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- HABILIDADES TÉCNICAS -->
+            <div>
+              <h3 class="mb-4">Habilidades Técnicas</h3>
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <h5>Frontend</h5>
+                  <ul class="timeline-tags mb-0">
+                    <li>HTML5, CSS3, Bootstrap 5</li>
+                    <li>JavaScript </li>
+                    <li>Diseño Responsive & Mobile First</li>
+                  </ul>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <h5>Backend</h5>
+                  <ul class="timeline-tags mb-0">
+                    <li>PHP 8+ y MySQL</li>
+                    <li>Paneles de administración</li>
+                    <li>Protección de rutas y seguridad</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROYECTOS -->
+    <section id="proyectos" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold mb-4">Proyectos</h2>
+          <p class="lead mb-4">Mis trabajos más recientes</p>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <button class="btn-proyecto active" data-tab="web">Proyectos Web</button>
+            <button class="btn-proyecto" data-tab="personal">Desarrollo Personal</button>
+            <button class="btn-proyecto" data-tab="mas">Más</button>
+          </div>
+        </div>
+
+        <div class="proyectos-tabs">
+          <!-- TAB: PROYECTOS WEB -->
+          <div class="proyectos-tab active" data-tab="web">
+            <div class="row g-4">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto-card text-center">
+                  <img src="fotos/plaxmar.jpg" class="proyecto-img" alt="Plaxmar">
+                  <p class="proyecto-text">
+                    E‑commerce Plaxmar con admin, planes de pago y galería de fotos.
+                  </p>
+                  <a href="#" class="btn-proyecto-demo">Ver en GitHub</a>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto-card text-center">
+                  <img src="fotos/portfolio.jpg" class="proyecto-img" alt="Portfolio">
+                  <p class="proyecto-text">
+                    Portfolio personal morado/negro con diseño responsive.
+                  </p>
+                  <a href="#" class="btn-proyecto-demo">Ver en GitHub</a>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto-card text-center">
+                  <img src="fotos/landing.jpg" class="proyecto-img" alt="Landing">
+                  <p class="proyecto-text">
+                    Landing page moderna con formulario de contacto.
+                  </p>
+                  <a href="#" class="btn-proyecto-demo">Ver en GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB: DESARROLLO PERSONAL -->
+          <div class="proyectos-tab" data-tab="personal">
+            <div class="row g-4">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto-card text-center">
+                  <img src="" class="proyecto-img" alt="App 1">
+                  <p class="proyecto-text">Proyecto personal 1: descripción corta.</p>
+                  <a href="#" class="btn-proyecto-demo">Ver en GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB: MÁS -->
+          <div class="proyectos-tab" data-tab="mas">
+            <div class="row g-4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CONTACTO -->
+    <section id="contacto" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold mb-4">Contacto</h2>
+          <p class="lead">Empecemos a trabajar juntos en tu proyecto</p>
+        </div>
+
+        <div class="row g-5 justify-content-center">
+          <!-- INFO DE CONTACTO -->
+          <div class="col-lg-5">
+            <div class="contact-info">
+              <h3 class="mb-4">Hablemos</h3>
+
+              <div class="contact-item mb-4">
+                <div class="contact-icon mb-3">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h5>Ubicación</h5>
+                <p>concordia, entre rios, Argentina</p>
+              </div>
+
+              <div class="contact-item mb-4">
+                <div class="contact-icon mb-3">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <h5>Email</h5>
+                <p><a href="mailto:santiagojacobo22@gmail.com">santiagojacobo22@gmail.com</a></p>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon mb-3">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <h5>Teléfono</h5>
+                <p>+54 3456268638</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FORMULARIO EMAILJS -->
+          <div class="col-lg-6">
+            <div class="contact-form">
+              <form id="contactForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control contact-input" name="user_name" placeholder="Tu nombre" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" class="form-control contact-input" name="user_email" placeholder="Tu email" required>
+                  </div>
+                  <div class="col-12">
+                    <input type="text" class="form-control contact-input" name="subject" placeholder="Asunto" required>
+                  </div>
+                  <div class="col-12">
+                    <textarea class="form-control contact-textarea" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn-contacto w-100">
+                      <span class="btn-text">Enviar mensaje</span>
+                      <span class="btn-loading d-none">Enviando...</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- EMAILJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    emailjs.init("wyd1mOzyuOpSwHEKm");
+
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const btn = this.querySelector('.btn-contacto');
+      const btnText = btn.querySelector('.btn-text');
+      const btnLoading = btn.querySelector('.btn-loading');
+
+      btnText.classList.add('d-none');
+      btnLoading.classList.remove('d-none');
+      btn.disabled = true;
+
+      emailjs.sendForm('service_9gz0nyv', 'template_y0q8r1j', this)
+        .then(() => {
+          alert('¡Mensaje enviado! Te respondo pronto.');
+          this.reset();
+        }, (error) => {
+          alert('Error al enviar el mensaje. Intentá de nuevo.');
+          console.log('EmailJS error:', error);
+        })
+        .finally(() => {
+          btnText.classList.remove('d-none');
+          btnLoading.classList.add('d-none');
+          btn.disabled = false;
+        });
+    });
+  </script>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="py-4">
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0 footer-text">
+            © 2025 Jacobo Santiago · Desarrollador Web
+          </p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#sobre-mi" class="footer-link me-3">Sobre mí</a>
+          <a href="#experiencia" class="footer-link me-3">Experiencia</a>
+          <a href="#proyectos" class="footer-link me-3">Proyectos</a>
+          <a href="mailto:santiagojacobo22@gmail.com" class="footer-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

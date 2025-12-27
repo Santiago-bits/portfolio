@@ -1,0 +1,418 @@
+/* ========= GLOBAL ========= */
+body {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a1f3a 50%, #3a2b4d 100%);
+  padding-top: 80px; /* espacio para navbar fixed */
+  color: #e0e0e0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* ========= HERO / SOBRE MÍ ========= */
+#sobre-mi {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(circle at 20% 80%, rgba(186, 104, 200, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(171, 71, 188, 0.1) 0%, transparent 50%);
+  position: relative;
+  overflow: hidden;
+}
+
+#sobre-mi::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><radialGradient id="g" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="%23ba68c80f"/><stop offset="100%" stop-color="transparent"/></radialGradient></defs><circle cx="20" cy="20" r="2" fill="url(%23g)"><animate attributeName="cy" values="20;80;20" dur="4s" repeatCount="indefinite"/></circle><circle cx="80" cy="80" r="1.5" fill="url(%23g)"><animate attributeName="cy" values="80;20;80" dur="5s" repeatCount="indefinite"/></circle></svg>');
+  pointer-events: none;
+  z-index: 1;
+}
+
+#sobre-mi > .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Títulos hero */
+#sobre-mi h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  background: linear-gradient(135deg, #ba68c8 0%, #ab47bc 50%, #8e24aa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 30px rgba(186, 104, 200, 0.3);
+  line-height: 1.1;
+}
+
+#sobre-mi h1 span {
+  background: none;
+  -webkit-text-fill-color: inherit;
+}
+
+#sobre-mi h2 {
+  font-size: 2rem;
+  background: linear-gradient(135deg, #d1c4e9, #ba68c8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+/* Texto hero */
+#sobre-mi .lead {
+  font-size: 1.3rem;
+  color: #e0e0e0;
+  line-height: 1.7;
+}
+
+/* Foto hero */
+#sobre-mi img {
+  border: 4px solid rgba(186, 104, 200, 0.3);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(186, 104, 200, 0.2),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
+  transition: all 0.4s ease;
+  filter: brightness(1.05) contrast(1.1);
+}
+
+#sobre-mi img:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow:
+    0 30px 80px rgba(186, 104, 200, 0.3),
+    0 0 0 1px rgba(186, 104, 200, 0.4);
+  border-color: rgba(186, 104, 200, 0.6);
+}
+
+/* ========= SOBRE MÍ DETALLE ========= */
+#sobre-detalle {
+  background-color: #000;
+  color: #e0e0e0;
+}
+
+#sobre-detalle h2,
+#sobre-detalle h3,
+#sobre-detalle h4 {
+  color: #ba68c8;
+}
+
+#sobre-detalle p,
+#sobre-detalle li {
+  color: #e0e0e0;
+}
+
+#sobre-detalle .text-muted {
+  color: #b0b0b0 !important;
+}
+
+#sobre-detalle .border {
+  border-color: #ba68c8 !important;
+}
+
+#sobre-detalle ul {
+  padding-left: 1rem;
+}
+
+#sobre-detalle li::marker {
+  color: #ba68c8;
+}
+
+/* ========= EXPERIENCIA ========= */
+#experiencia {
+  background-color: #000;
+  color: #e0e0e0;
+}
+
+#experiencia h2 {
+  color: #ba68c8;
+}
+
+#experiencia .lead {
+  color: #b0b0b0;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 20px;
+  border-left: 2px solid rgba(186, 104, 200, 0.4);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -9px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ba68c8, #ab47bc);
+  box-shadow: 0 0 10px rgba(186, 104, 200, 0.8);
+}
+
+.timeline-content h3 {
+  margin-bottom: 5px;
+  color: #ba68c8;
+  font-size: 1.2rem;
+}
+
+.timeline-date {
+  font-size: 0.85rem;
+  color: #b0b0b0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.timeline-content p {
+  margin-bottom: 6px;
+}
+
+.timeline-tags {
+  font-size: 0.85rem;
+  color: #d1c4e9;
+}
+
+/* ========= PROYECTOS ========= */
+#proyectos {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><radialGradient id="g" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="%23ba68c80f"/><stop offset="100%" stop-color="transparent"/></radialGradient></defs><circle cx="20" cy="20" r="2" fill="url(%23g)"><animate attributeName="cy" values="20;80;20" dur="4s" repeatCount="indefinite"/></circle><circle cx="80" cy="80" r="1.5" fill="url(%23g)"><animate attributeName="cy" values="80;20;80" dur="5s" repeatCount="indefinite"/></circle></svg>');
+}
+
+#proyectos h2 {
+  color: #ba68c8 !important;
+}
+
+#proyectos .lead {
+  color: #e0e0e0 !important;
+}
+
+.proyecto-card {
+  border: 3px solid #ba68c8;
+  border-radius: 24px;
+  padding: 24px;
+  background-color: #111;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(186, 104, 200, 0.3);
+}
+
+.proyecto-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.proyecto-text {
+  color: #e0e0e0;
+  margin-bottom: 16px;
+}
+
+/* Botones tabs proyectos */
+.btn-proyecto {
+  background: rgba(255,255,255,0.1);
+  border: 2px solid #ba68c8;
+  color: #ba68c8;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  margin: 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-proyecto:hover {
+  background: linear-gradient(45deg, #ba68c8, #ab47bc);
+  border-color: #ba68c8;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(186, 104, 200, 0.4);
+}
+
+.btn-proyecto.active {
+  background: linear-gradient(45deg, #ba68c8, #ab47bc);
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(186, 104, 200, 0.4);
+}
+
+.btn-proyecto-demo {
+  background: linear-gradient(45deg, #ba68c8, #ab47bc);
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn-proyecto-demo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(186, 104, 200, 0.4);
+  color: white !important;
+}
+
+/* Tabs proyectos */
+.proyectos-tab {
+  display: none;
+}
+
+.proyectos-tab.active {
+  display: block;
+}
+
+/* ========= CONTACTO ========= */
+#contacto {
+  background-color: #1a0f2a;
+  color: #e0e0e0;
+}
+
+#contacto h2 {
+  color: #ba68c8;
+}
+
+#contacto .lead {
+  color: #e0e0e0;
+}
+
+.contact-info h3,
+.contact-info h5 {
+  color: #ba68c8;
+}
+
+.contact-item p {
+  color: #b0b0b0;
+  margin-bottom: 0;
+}
+
+.contact-item a {
+  color: #d1c4e9;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: #ba68c8;
+  text-decoration: underline;
+}
+
+.contact-icon i {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(186, 104, 200, 0.1);
+  border-radius: 12px;
+  color: #ba68c8;
+  font-size: 1.5rem;
+}
+
+.contact-form {
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 24px;
+  border: 1px solid rgba(186,104,200,0.2);
+  padding: 2rem;
+}
+
+.contact-input,
+.contact-textarea {
+  background-color: rgba(255,255,255,0.05);
+  border: 1px solid rgba(186, 104, 200, 0.3);
+  color: #e0e0e0;
+  border-radius: 12px;
+  padding: 12px 16px;
+  transition: all 0.3s ease;
+}
+
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+  color: #b0b0b0;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  background-color: rgba(255,255,255,0.1);
+  border-color: #ba68c8;
+  box-shadow: 0 0 0 0.2rem rgba(186, 104, 200, 0.2);
+  color: #e0e0e0;
+}
+
+.btn-contacto {
+  background: linear-gradient(45deg, #ba68c8, #ab47bc);
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-contacto:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(186, 104, 200, 0.4);
+  color: white !important;
+}
+
+
+
+/* ========= RESPONSIVE ========= */
+@media (max-width: 768px) {
+  /* contacto centrado en tablet */
+  .contact-info {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* botones proyectos en columna */
+  .btn-proyecto {
+    display: block;
+    width: 100%;
+    margin: 6px 0;
+    font-size: 0.8rem;
+    padding: 10px 16px;
+  }
+
+  /* contacto: iconos al lado del texto */
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+  }
+
+  .contact-icon {
+    margin-bottom: 0 !important;
+  }
+
+  .contact-info {
+    text-align: left;
+  }
+
+  section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  #sobre-mi h1 {
+    font-size: 2.4rem;
+  }
+
+  #sobre-mi h2 {
+    font-size: 1.4rem;
+  }
+}
